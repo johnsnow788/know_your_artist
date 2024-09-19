@@ -56,6 +56,7 @@ body {
     height: 100%;
     width: 100%;
     background-image: url(footages/a.dawn.2.png);
+    background-color: rgb(79, 77, 77);
     background-size: cover;
   }
   
@@ -74,6 +75,7 @@ body {
   
   .album_cover {
     background-image: url(footages/RMZ.jpg);
+    background-color: black;
     background-size: cover;
     height: 270px;
     width: 270px;

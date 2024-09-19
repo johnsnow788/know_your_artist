@@ -53,6 +53,7 @@ body {
     height: 100%;
     width: 100%;
     background-image: url(footages/a.after_hours.8.png);
+    background-color: rgb(104, 104, 104);
     background-size: cover;
   }
   
@@ -71,6 +72,7 @@ body {
   
   .album_cover {
     background-image: url(footages/2.JPG);
+    background-color: black;
     background-size: cover;
     height: 270px;
     width: 270px;
