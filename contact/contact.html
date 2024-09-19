@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="RMZ.jpg" />
+    <link rel="stylesheet" href="contact.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "u_7ZNQApyaMWwRYg0",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="barre" onmouseover="showbarre()" onmouseout="hidebarre()">
+      <a href="../index.html">Home</a>
+      <a href="../lyrics/lyrics.html">Lyrics</a>
+      <a href="contact.html" id="contact">Contact</a>
+    </div>
+    <section>
+      <div class="boite">
+        <form action="">
+          <label for="name">Name</label>
+          <input type="text" required id="name"/>
+          <label for="name">Email</label>
+          <input type="email" required id="email" />
+          <label for="textarea">Send us your feedback</label>
+          <textarea name="" id="message" required></textarea>
+          <input type="submit" id="submit" value="send" onclick="sendMail()">
+        </form>
+      </div>
+    </section>
+  </body>
+  <script src="contact.js"></script>
+</html>

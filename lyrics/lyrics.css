@@ -1,0 +1,222 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  
+  .barre {
+    height: 100vh;
+    width: 5%;
+    font-size: 20px;
+    background-color: rgb(14, 14, 14);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    transition: width 1s;
+    z-index: 1;
+  }
+
+  #lyr{
+    color:rgb(125, 129, 137) ;
+  }
+  
+  .barre a {
+    transform: rotate(90deg);
+    transform-origin: left top;
+    margin-left: 70px;
+    transition: transform 0.5s ease, margin-left 0.5s ease;
+  }
+  
+  .horizontal a {
+    transform: rotate(0deg);
+    transform-origin: initial;
+    margin-left: 0;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  a:hover {
+    color: rgb(172, 194, 250);
+  }
+  
+  header {
+    height: 50%;
+    width: 100%;
+    position: relative;
+  }
+  
+  .sight {
+    height: 100%;
+    width: 100%;
+    background-image: url(footages/back.JPG);
+    background-size: contain; 
+  }
+  
+  .artist {
+    height: 280px;
+    width: 280px;
+    border-radius: 140px;
+    background-image: url(footages/artist.JPG);
+    background-size: cover;
+    position: absolute;
+    top: 45%;
+    left: 28%;
+    border: solid rgb(172, 194, 250);
+  }
+
+  .marge{
+    width: 100%;
+    height: 6.8%;
+    background-color: rgb(31, 31, 31);
+  }
+  
+  .content {
+    margin: 0px;
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px; 
+    padding: 10px;
+  }
+  
+  .album {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-top: 10px;
+  }
+  
+  .image {
+    height: 200px;
+    width: 200px;
+    background-color: rgb(23, 22, 33);
+    transition: 0.3s;
+    border-radius: 3px;
+  }
+  
+  .image:hover {
+    transform: scale(1.15);
+  }
+  
+  h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  span {
+    font-size: 13px;
+    font-weight: 100;
+  }
+
+  #DF{
+    background-image: url(footages/1.JPG);
+    background-size: contain;
+}
+#AH{
+    background-image: url(footages/2.JPG);
+    background-size: contain;
+}
+
+#SB{
+    background-image: url(footages/72.JPG);
+    background-size: contain;
+
+
+}
+
+#MDM{
+    background-image: url(footages/3.JPG);
+    background-size: contain;
+}
+#BBM{
+    background-image: url(footages/4.JPG);
+    background-size: contain;
+}
+#KL{
+    background-image: url(footages/5.JPG);
+    background-size: contain;
+}
+#T{
+    background-image: url(footages/6.JPG);
+    background-size: contain;
+}
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .barre {
+      width: 10%;
+      font-size: 16px;
+    }
+  
+    .barre a {
+      margin-left: 40px;
+    }
+  
+    .artist {
+      height: 200px;
+      width: 200px;
+      top: 20%;
+      left: 20%;
+    }
+  
+    header {
+      height: 40%;
+    }
+  
+    .content {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .barre {
+      width: 20%;
+      font-size: 14px;
+    }
+  
+    .barre a {
+      margin-left: 20px;
+    }
+  
+    .artist {
+      height: 150px;
+      width: 150px;
+      top: 15%;
+      left: 15%;
+    }
+  
+    header {
+      height: 30%;
+    }
+  
+    .content {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+  
+    .image {
+      height: 150px;
+      width: 150px;
+    }
+  
+    h3 {
+      font-size: 14px;
+    }
+  
+    span {
+      font-size: 11px;
+    }
+  }
+  

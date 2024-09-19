@@ -1,0 +1,212 @@
+body {
+    height: 100vh;
+    background-color: rgb(31, 31, 31);
+    margin: 0;
+    padding: 0;
+  }
+  .barre {
+    height: 100vh;
+    width: 4%;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    transition: width 1s;
+    z-index: 1;
+  }
+  
+  .barre a {
+    transform: rotate(90deg);
+    transform-origin: left top;
+    margin-left: 70px;
+    transition: transform 0.5s ease, margin-left 0.5s ease;
+  }
+  
+  .horizontal a {
+    transform: rotate(0deg);
+    transform-origin: initial;
+    margin-left: 0;
+  }
+  
+  a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  a:hover {
+    color: rgb(172, 194, 250);
+  }
+  
+  header {
+    height: 50%;
+    width: 100%;
+    position: relative;
+    background-color: bisque;
+  }
+  
+  .sight {
+    height: 100%;
+    width: 100%;
+    background-image: url(footages/a.beauty.6.png);
+    background-size: cover;
+  }
+  
+  .specifics {
+    height: 280px;
+    width: 750px;
+    background-size: cover;
+    position: absolute;
+    top: 27%;
+    left: 27%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: rgb(236, 236, 236);
+  }
+  
+  .album_cover {
+    background-image: url(footages/4.JPG);
+    background-size: cover;
+    height: 270px;
+    width: 270px;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    margin: 0;
+    font-size: 40px;
+  }
+  
+  h3 {
+    margin: 0;
+    font-size: 25px;
+    margin-bottom: 7px;
+  }
+  
+  h4 {
+    margin: 0;
+  }
+  
+  .content {
+    margin: 0px;
+    width: 100%;
+    height: 1250px;
+    background-color: rgb(31, 31, 31);
+    color: rgb(228, 217, 217);
+    padding: 10px;
+    display: flex;
+    padding: 0px;
+  }
+  
+  .liste {
+    height: 1250px;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .song {
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    border-top: solid rgb(116, 114, 114);
+    border-width: 1px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  .song span {
+    margin-left: 200px;
+    color: rgb(132, 129, 129);
+  }
+  .song p {
+    margin-left: 40px;
+  }
+  
+  i {
+    text-align: end;
+  }
+  
+  .sider {
+    height: 1250px;
+    width: 40%;
+    color: black;
+    background-color: rgb(67, 66, 66);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    gap: 5px;
+  }
+  
+  .aside {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(31, 31, 31);
+    padding: 20px;
+    color: white;
+  }
+  
+  #about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+  }
+  
+  #about span{
+    font-weight: 1000;
+    text-decoration: underline;
+  }
+  
+  #album_credits{
+   margin-top: 15px;
+   height: 400px;
+  
+  }
+  
+  .credits{
+    display : flex;
+    border-bottom: solid rgb(86, 86, 86);
+    border-width: 0.5px;
+  }
+  
+  .sider p {
+    width: 340px;
+    color: white;
+  }
+  #more_albums {
+    display: flex;
+    gap: 10px;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sup {
+    height: 150px;
+    width: 150px;
+    background-color: black;
+  }
+  
+  #sup1 {
+    background-image: url(footages/1.JPG);
+    background-size: cover;
+  }
+  
+  #sup2 {
+    background-image: url(footages/3.JPG);
+    background-size: cover;
+  }
+  
+  #see_all {
+    height: 15px;
+  }
+  

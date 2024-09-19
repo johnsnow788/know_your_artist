@@ -1,0 +1,76 @@
+body {
+  height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+
+.barre{
+  height: 100vh;
+  width: 5%;
+  font-size: 20px;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+  gap: 50px;
+  transition: width 1s;
+}
+
+
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.barre a {
+  transform: rotate(90deg); 
+  transform-origin: left top; 
+  margin-left: 70px; 
+  transition: transform 0.5s ease, margin-left 0.5s ease; 
+}
+
+
+.horizontal a { 
+  transform: rotate(0deg); 
+  transform-origin: initial; 
+  margin-left: 0; 
+}
+
+a:hover{
+  color:rgb(172, 194, 250);
+}
+
+
+h1 {
+  position: absolute;
+  color: aliceblue; 
+  top: 40%;
+  left: 35%;
+  font-size: 60px;
+}
+h2 {
+  position: absolute;
+  color: aliceblue;
+  top: 40%;
+  left: 35%;
+}
+
+
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%,-50%);
+  object-fit: cover; 
+  z-index: -1;    
+}
+
+
